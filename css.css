@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+header {
+    background-color: #29180A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    position: relative;
+}
+
+.logo {
+    height: 100%; /* Zmień wysokość na 100%, aby logo wypełniało całą wysokość nagłówka */
+}
+
+.logo img {
+    height: 100%; /* Ustaw wysokość obrazu na 100% wysokości kontenera */
+    width: auto; /* Automatycznie dostosuj szerokość */
+}
+
+nav {
+    width: 75%; /* Ustawienie nawigacji na 50% szerokości nagłówka */
+    display: flex;
+    justify-content: flex-end; /* Umieść nawigację na prawym końcu */
+    align-items: center;
+    position: absolute; /* Ustaw pozycję absolutną */
+    top: 0; /* Ustaw odstęp od górnej krawędzi */
+    right: 10%;
+    font-size: 24px; /* Ustaw odstęp od prawej krawędzi */
+   
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 3px;
+}
+
+nav li {
+    margin-left: 9%;
+    list-style-type: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    position: relative; /* Dodajemy pozycję względną, aby móc umieścić pasek pod aktywnym elementem */
+}
+
+nav a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px; /* Wysokość paska */
+    background-color: #fff; /* Kolor paska */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+
+
+main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+main .left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .left button {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+main .center {
+	text-align: center;
+}
+
+main .center img {
+	width: 100%;
+	max-width: 400px;
+}
+
+main .center h1 {
+margin-top: 20px;
+	font-size: 36px;
+	color: #333;
+}
+
+main .center p {
+	margin-top: 20px;
+	font-size: 24px;
+	color: #333;
+}
+
+main .right {
+	text-align: right;
+}
+
+main .right h2 {
+	margin-top: 20px;
+	font-size: 24px;
+	color: #333;
+}
+
+main .right p {
+	margin-top: 20px;
+	font-size: 18px;
+	color: #333;
+}
+
+footer {
+	background-color: #29180A;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+	color: #fff;
+}
