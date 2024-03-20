@@ -14,18 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-/* Powiększanie się zdjęć w galerii, jak użytkownik najedzie myszką */
-const galeria = document.querySelector('.galeria');
 
-galeria.addEventListener('mouseover', (e) => {
-  if (e.target.tagName === 'IMG') {
-    e.target.style.transform = 'scale(1.2)';
-  }
-});
 
-galeria.addEventListener('mouseout', (e) => {
-  if (e.target.tagName === 'IMG') {
-    e.target.style.transform = 'scale(1)';
-  }
-});
 

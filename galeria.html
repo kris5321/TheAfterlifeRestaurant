@@ -5,37 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheAfterlifeRestaurant</title>
 
-	<link rel="stylesheet" type="text/css" href="css.css">
-    <script src="script.js"></script>
-	<script src="navbar.js"></script>
+	<link rel="stylesheet" type="text/css" href="cssgaleria.css">
+	<link rel="stylesheet" type="text/css" href="csswspolne.css">
 </head>
 <body>
 
+    <header>
+		<div class="logo">
+			<img src="navbar/logo.png" alt="Restauracja logo">
+		</div>
+		<nav class="active pasek"  id="dynamic-nav"></nav>
+	</header>
+	<main>
+
     <div class="galeria">
-        <img src="./pictures/braune.png" alt="jedzenie">
-        <img src="./pictures/ciasta.png" alt="jedzenie">
-        <img src="./pictures/kotlecik warzywa.png" alt="jedzenie">
-        <img src="./pictures/krewetki.png" alt="jedzenie">
-        <img src="./pictures/makaron2.png" alt="jedzenie">
-        <img src="./pictures/mararon.png" alt="jedzenie">
-        <img src="./pictures/mieso.png" alt="jedzenie">
-        <img src="./pictures/salatka ceasar.png" alt="jedzenie">
-        <img src="./pictures/zeberka.png" alt="jedzenie">
-        <img src="./pictures/schabowy.png" alt="jedzenie">
+        <img src="./pictures/braune.png" alt="jedzenie" loading="lazy">
+        <img src="./pictures/ciasta.png" alt="jedzenie" loading="lazy">
+        <img src="./pictures/kotlecik warzywa.png" alt="jedzenie" loading="lazy">
+        <img src="./pictures/krewetki.png" alt="jedzenie" loading="lazy">
+        <img src="./pictures/makaron2.png" alt="jedzenie" loading="lazy">
+        <img src="./pictures/mararon.png" alt="jedzenie" loading="lazy">
+        <img src="./pictures/mieso.png" alt="jedzenie" loading="lazy">
+        <img src="./pictures/salatka ceasar.png" alt="jedzenie" loading="lazy">
+        <img src="./pictures/zeberka.png" alt="jedzenie" loading="lazy">
+        <img src="./pictures/schabowy.png" alt="jedzenie" loading="lazy">
         
-        <img src="./pictures/ciasto czekoladowe.jpg" alt="jedzenie">
-        <img src="./pictures/jagniecina na talerzu.jpg" alt="jedzenie">
-        <img src="./pictures/zeberka 2.jpg" alt="jedzenie">
-        <img src="./pictures/salatka-cezar-ze-smazonymi-krewetkami.jpg" alt="jedzenie">
-        <img src="./pictures/mix salatek.jpg" alt="jedzenie">
-        <img src="./pictures/ciasto jagodowe.jpg" alt="jedzenie">
-        <img src="./pictures/mieszanka.png" alt="jedzenie">
-        <img src="./pictures/stek.jpg" alt="jedzenie">
-        <img src="./pictures/mieso.png" alt="jedzenie">
-        <img src="./pictures/restauracja-na-zewnatrz.jpg" alt="jedzenie">
+        <img src="./pictures/ciasto czekoladowe.jpg" alt="jedzenie" loading="lazy">
+        <img src="./pictures/jagniecina na talerzu.jpg" alt="jedzenie" loading="lazy">
+        <img src="./pictures/zeberka 2.jpg" alt="jedzenie" loading="lazy">
+        <img src="./pictures/salatka-cezar-ze-smazonymi-krewetkami.jpg" alt="jedzenie" loading="lazy">
+        <img src="./pictures/mix salatek.jpg" alt="jedzenie" loading="lazy">
+        <img src="./pictures/ciasto jagodowe.jpg" alt="jedzenie" loading="lazy">
+        <img src="./pictures/mieszanka.png" alt="jedzenie" loading="lazy">
+        <img src="./pictures/stek.jpg" alt="jedzenie" loading="lazy">
+        <img src="./pictures/mieso.png" alt="jedzenie" loading="lazy">
+        <img src="./pictures/restauracja-na-zewnatrz.jpg" alt="restauracja" loading="lazy">
     </div>
 
+    <div class="overlay">
+        <span class="close">&times;</span>
+        <span class="prev">&#10094;</span>
+        <img class="overlay-img" src="" alt="jedzenie">
+        <span class="next">&#10095;</span>
+    </div>
 
-    
+    <footer>
+		<p>Restauracja  TheAfterlife | © 2024</p>
+	</footer>
+
+    <script src="navbar.js"></script>
+    <script src="scriptgaleria.js"></script>
 </body>
 </html>
