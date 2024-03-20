@@ -1,0 +1,46 @@
+.kontener {
+    display: flex;
+    margin: 20px auto;
+    width: 90%; /* Zmniejszamy szerokość kontenera */
+}
+
+.historia {
+    width: 40%; /* Zmniejszamy szerokość sekcji historii */
+    margin-right: 10px; /* Dodajemy odstęp między sekcjami */
+    border-right: 3px solid #d06c6c; /* Dodajemy kreskę odzielającą historię od zdjęć */
+    padding-right: 10px; /* Dodajemy odstęp wewnętrzny z prawej strony */
+}
+
+.zdjecia {
+    width: 60%; /* Zwiększamy szerokość sekcji ze zdjęciami */
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie zdjęcia w kontenerze */
+    align-items: center; /* Wyśrodkowanie zdjęcia w kontenerze */
+}
+
+.zdjecie {
+    max-width: 100%; /* Maksymalna szerokość zdjęcia to 100% kontenera */
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    margin-top: 20px; /* Dodajemy odstęp między sekcją historii a zdjęciem */
+}
+
+@media (max-width: 768px) {
+    .kontener {
+        flex-direction: column; /* Wyrównujemy elementy pionowo na mniejszych ekranach */
+    }
+
+    .historia,
+    .zdjecia {
+        width: 100%; /* Na mniejszych ekranach sekcje zajmują pełną szerokość */
+        border-right: none; /* Usuwamy kreskę odzielającą na mniejszych ekranach */
+        padding-right: 0; /* Usuwamy odstęp wewnętrzny na mniejszych ekranach */
+    }
+
+    .zdjecie {
+        width: 100%;
+        margin-bottom: 20px; /* Dodajemy odstęp między zdjęciami */
+        margin-top: 10px; /* Dodajemy odstęp między sekcją historii a zdjęciem */
+    }
+}
