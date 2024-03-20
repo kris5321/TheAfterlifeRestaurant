@@ -4,7 +4,7 @@ body {
 	font-family: Arial, sans-serif;
 }
 header {
-    background-color: #29180A;
+    background-color: #53371f;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,23 +14,23 @@ header {
 }
 
 .logo {
-    height: 100%; /* Zmień wysokość na 100%, aby logo wypełniało całą wysokość nagłówka */
+    height: 100%; 
 }
 
 .logo img {
-    height: 100%; /* Ustaw wysokość obrazu na 100% wysokości kontenera */
-    width: auto; /* Automatycznie dostosuj szerokość */
+    height: 100%; 
+    width: auto; 
 }
 
 nav {
-    width: 75%; /* Ustawienie nawigacji na 50% szerokości nagłówka */
+    width: 75%; 
     display: flex;
-    justify-content: flex-end; /* Umieść nawigację na prawym końcu */
+    justify-content: flex-end;
     align-items: center;
-    position: absolute; /* Ustaw pozycję absolutną */
-    top: 0; /* Ustaw odstęp od górnej krawędzi */
+    position: absolute; 
+    top: 0;
     right: 10%;
-    font-size: 24px; /* Ustaw odstęp od prawej krawędzi */
+    font-size: 24px; 
    
 }
 
@@ -49,19 +49,18 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
-    position: relative; /* Dodajemy pozycję względną, aby móc umieścić pasek pod aktywnym elementem */
+    position: relative; 
 }
 
 nav a.active::after {
     content: '';
     display: block;
-    width: 100%;
-    height: 3px; /* Wysokość paska */
-    background-color: #fff; /* Kolor paska */
+    width: calc(100% + 12px); 
+    height: 3px; 
+    background-color: #fff; 
     position: absolute;
-    bottom: 0;
-    left: 0;
-
+    bottom: -4px; 
+    left: -6px; 
 }
 
 
