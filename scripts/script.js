@@ -1,19 +1,12 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Pobieramy aktualną ścieżkę URL
-    const currentPath = window.location.pathname;
-
-    // Pobieramy wszystkie linki z nawigacji
-    const navLinks = document.querySelectorAll('nav a');
-
-    // Iterujemy przez wszystkie linki
-    navLinks.forEach(link => {
-        // Sprawdzamy, czy ścieżka URL zawiera href linku
-        if (currentPath.includes(link.getAttribute('href'))) {
-            link.classList.add('active');
-        }
-    });
-});
-
-
-
-
+function losujRabat() {
+    // Generowanie losowego rabatu od 0% do 10%
+    var rabat = Math.floor(Math.random() * 11);
+    // Generowanie losowego kodu
+    var kod = Math.random().toString(36).substr(2, 8).toUpperCase();
+    // Wyświetlenie alertu z rabatem i kodem
+    alert("Gratulacje! Twój rabat wynosi: " + rabat + "%.\nTwój kod rabatowy to: " + kod);
+}
+function wege() {
+    // Przekierowanie użytkownika na inną stronę
+    window.location.href = "https://www.rp.pl/zdrowy-styl-zycia/art37419791-wegetarianizm-moze-byc-szkodliwy-dla-rozwoju-mozgu-inteligencji-i-zdrowia-psychicznego";
+}
