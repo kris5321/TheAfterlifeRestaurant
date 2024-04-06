@@ -1,3 +1,6 @@
+body {
+    background-color: #D9D9D9;
+}
 main {
     margin: 50px;
     display: flex;
@@ -23,6 +26,22 @@ main {
 .container-map {
     margin-left: auto;
 }
+
+#otwarte {
+    font-family: 'Zilla Slab', serif;
+    color: rgb(153, 115, 68);
+}
+
+#rez {
+    font-family: 'Caveat', serif;
+    color: rgb(237, 138, 16);
+}
+
+#napisz {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 
 @media screen and (max-width: 800px) {
     main {
