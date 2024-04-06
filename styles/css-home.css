@@ -73,7 +73,7 @@ main .right-section {
 
 /* Przesunięcie tekstu w górę */
 .przesun-tekst-do-gory {
-    align-self: flex-start;
+ 
     padding-right: 12%;
     font-size: 24px;
 }

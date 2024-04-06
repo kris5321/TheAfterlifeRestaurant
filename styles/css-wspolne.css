@@ -65,14 +65,28 @@ nav a.active::after {
 }
 
 footer {
-    background-color: #29180A;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background-color: #29180A;
     color: #fff;
+    padding: 10px;
+}
 
-    bottom: 0; /* Ustaw na dole ekranu */
-    width: 100%; /* Rozciągnij na szerokość ekranu */
+.footer-left, .footer-right {
+    flex: 1;
+    text-align: center;
+    font-size: 32px
+}
+
+.footer-left {
+    text-align: left;
+    padding-left: 15%;
+}
+
+.footer-right {
+    text-align: right;
+    padding-right: 15%;
 }
 
 
