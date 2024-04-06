@@ -1,98 +1,113 @@
+/* Globalne style */
+body {
+    background-color: chocolate;
+    margin: 0; /* Usunięcie marginesu */
+}
+
+/* Usunięcie marginesów dla headera i footera */
+header, footer {
+    margin: 0;
+}
+
 /* Adjustments to main section */
 main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 700px;
-    background-color:chocolate;
+    height: 780px;
+    background-color: chocolate;
+    width: 100%;
+    margin: 0; /* Usunięcie marginesu */
 }
 
-/* Left section styles */
-main .left {
-    width: 15%;
+/* Lewa sekcja */
+.left-section {
+    width: 20%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-left: 5%;
-   
+    padding-right: 5%;
 }
 
-/* Center section styles */
-main .center {
-    height: 100%;
-    width: 70%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Środkowa sekcja */
+.center-section {
+    width: 60%;
+    text-align: center;
+}
+
+/* Prawa sekcja */
+.right-section {
+    width: 20%;
+    text-align: center;
+    padding-left: 5%;
 }
 
 /* Image styles */
 .center-image {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%; /* Ustawienie szerokości na 100% */
+    height: auto; /* Zachowanie proporcji */
 }
 
 /* Right section styles */
-/* Right section styles */
-main .right {
-    width: 15%;
-    text-align: center; /* Wyśrodkowanie tekstu */
+main .right-section {
+    width: 20%;
+    text-align: center;
     padding-right: 4%;
-    align-items: flex-start;
-    justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
     height: 100%;
 }
 
 /* Zasady Loteria na kod promocyjny */
-.right h1 {
-    margin-bottom: 20px; /* Dodatkowy margines na dole dla estetyki */
+.right-section h1 {
+    margin-bottom: 20px;
 }
+
 /* Button styles */
 .button1 {
     height: 50px;
     width: 80%;
-    margin-bottom: 5%; /* zmiana marginesu, aby przesunąć przycisk do góry */
+    margin-bottom: 5%;
     background-color: darkred;
+    border-radius: 20px;
     color: white;
     font-size: 32px;
 }
 
 /* Przesunięcie tekstu w górę */
 .przesun-tekst-do-gory {
-    align-self: flex-start; /* przesunięcie do góry */
+    align-self: flex-start;
     padding-right: 12%;
     font-size: 24px;
 }
 
 /* Dodanie możliwości pisania po całej sekcji */
 .right-content {
-    flex-grow: 1; /* wykorzystanie dostępnej przestrzeni wewnątrz sekcji */
+    flex-grow: 1;
 }
 
+/* Dodatkowe style */
 .promocja {
     color: greenyellow;
-    margin-bottom: 5%; /* Dodaje margines na dole tekstu */
-    margin-top: 0; /* Usuwa margines górny */
+    margin-bottom: 5%;
+    margin-top: 0;
 }
-.przesun{
+
+.przesun {
     margin-bottom: 55%;
 }
-.b1{
+
+.b1 {
     width: 100%;
-    height:  10%;
+    height: 10%;
 }
-ol{
+
+ol {
     padding: 2%;
     margin: 3px;
 }
-li{
+
+li {
     padding: 4px;
 }
+
 .logo.left {
     animation: slideFromLeft 1.5s ease forwards;
 }
@@ -136,5 +151,41 @@ li{
     }
     100% {
         opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Zmiana układu na kolumnowy dla małych ekranów */
+    main {
+        flex-direction: column;
+    }
+
+    /* Dostosowanie szerokości sekcji */
+    main .left-section, main .center-section, main .right-section {
+        width: 100%;
+    }
+
+    /* Usunięcie marginesów */
+    main .left-section, main .center-section, main .right-section {
+        margin: 0;
+    }
+
+    /* Dostosowanie wysokości obrazka */
+    .center-image {
+        max-width: 80%;
+    }
+
+    /* Dodatkowe dostosowania (opcjonalnie) */
+    .right-section h1 {
+        font-size: 24px;
+    }
+
+    .button1 {
+        font-size: 24px;
+        width: 90%;
+    }
+
+    .przesun-tekst-do-gory {
+        padding-right: 5%;
     }
 }

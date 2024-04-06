@@ -86,3 +86,12 @@
 .next {
     right: 15px;
 }
+
+/* Dostosowanie wielkości zdjęć dla mniejszych ekranów */
+@media (max-width: 768px) {
+    .galeria img {
+        width: 100%; /* Ustawienie szerokości na 100% */
+        height: auto; /* Automatyczne dostosowanie wysokości */
+        margin: 5px 0; /* Mniejszy margines dla mniejszych ekranów */
+    }
+}

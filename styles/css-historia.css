@@ -1,3 +1,7 @@
+body {
+    background-color: #D9D9D9;
+}
+
 .kontener {
     display: flex;
     margin: 20px auto;
@@ -25,6 +29,12 @@
     border: 1px solid #ddd;
     margin-top: 20px; /* Dodajemy odstęp między sekcją historii a zdjęciem */
 }
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
 
 @media (max-width: 768px) {
     .kontener {
