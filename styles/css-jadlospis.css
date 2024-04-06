@@ -21,37 +21,45 @@
 }
 
 .przystawki,
-.dania-glowne {
+.dania-glowne,
+.desery,
+.napoje {
     flex-basis: 45%;
 }
 
 
 .przystawki h2,
-.dania-glowne h2 {
+.dania-glowne h2,
+.desery h2,
+.napoje h2  {
     text-align: center;
 }
 
 .przystawki-container,
-.dania-container {
+.dania-container,
+.deser-container,
+.napoje-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.dania-container img {
-    max-width: 50%;
-    height: auto;
-}
-
-.przystawki-container img {
+.dania-container img,
+.przystawki-container img,
+.deser-container img,
+.napoje-container img
+{
     max-width: 50%;
     height: auto;
 }
 
 .opis {
     margin-top: 10px;
-    text-align: center;
+    
+}
+.opis h3 {
+    margin: left;
 }
 
 .opis h3 {
