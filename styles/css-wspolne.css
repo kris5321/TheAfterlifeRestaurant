@@ -123,4 +123,28 @@ footer {
     }
 }
 
+/* Responsywność dla mniejszych ekranów */
+@media (max-width: 768px) {
+    header {
+        height: 200px; /* Zwiększamy wysokość nagłówka dla mniejszych ekranów */
+    }
+    nav {
+        width: 100%; /* Zmieniamy szerokość na 100% */
+        text-align: center; /* Wyśrodkowanie elementów w pionie */
+        position: static; /* Zmieniamy pozycję na statyczną, aby wyświetlała się pod nagłówkiem */
+        transform: none; /* Resetujemy transformację */
+    }
+
+    nav ul {
+        flex-direction: column; /* Zmieniamy kierunek na kolumnowy */
+        padding: 0; /* Resetujemy padding */
+    }
+
+    nav li {
+        margin-left: 0; /* Usuwamy marginesy na boki */
+        margin-bottom: 10px; /* Dodajemy odstęp między elementami listy */
+    }
+}
+
+
 
