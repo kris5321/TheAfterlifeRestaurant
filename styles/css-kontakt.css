@@ -1,0 +1,103 @@
+main {
+    padding: 20px;
+    display: flex; /* Ustawienie kontenera na flexbox */
+    justify-content: space-between; /* Rozłożenie kontenerów na całej szerokości */
+    align-items: flex-start; /* Wyrównanie do góry */
+}
+
+.container-map {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-inputs {
+    max-width: 500px;
+    margin: 20px 0 0 200px;
+    
+}
+
+.restaurant-info {
+    max-width: 500px;
+    background-color: #f9f9f9;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 20px 0 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Zilla Slab', cursive;
+    margin: 0;
+}
+
+
+.restaurant-info h3 {
+    font-size: 20px; /* Rozmiar czcionki dla nagłówków */
+    margin-bottom: 15px; /* Odstęp między nagłówkami */
+}
+
+.restaurant-info h3 a {
+    font-weight: bold; /* Pogrubienie linków */
+}
+
+.restaurant-info .hours {
+    margin-bottom: 10px; /* Odstęp między godzinami otwarcia */
+}
+
+.restaurant-info .hours .dni-tygodnia {
+    font-weight: bold; /* Pogrubienie dni tygodnia */
+}
+
+.restaurant-info .btn {
+    display: inline-block; /* Ustawienie przycisku jako inline-block */
+    padding: 12px 24px; /* Wewnętrzny padding */
+    font-size: 16px; /* Rozmiar czcionki przycisku */
+    background-color: #007bff; /* Kolor tła przycisku */
+    color: #fff; /* Kolor tekstu */
+    text-decoration: none; /* Usunięcie podkreślenia */
+    border-radius: 6px; /* Zaokrąglenie rogów */
+    transition: background-color 0.3s; /* Animacja zmiany koloru tła */
+}
+
+.restaurant-info .btn:hover {
+    background-color: #0056b3; /* Kolor tła przycisku po najechaniu */
+}
+
+
+/* target all input elements within the .input-group class*/
+.input-group input {
+    background-color: #F0F0F0;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    box-sizing: border-box; /* include padding and border in width */
+    padding: 12px 10px; /* adjust padding as needed */
+    width: 100%; /* or set a specific width */
+    margin-bottom: 10px; /* add space between input fields */
+    font-size: 14px;
+  }
+  
+  /* target the textarea element */
+  .input-group textarea {
+    background-color: #F0F0F0;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    box-sizing: border-box; /* include padding and border in width */
+    padding: 12px 10px; /* adjust padding as needed */
+    width: 100%; /* or set a specific width */
+    margin-bottom: 10px; /* add space between input fields */
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Szerokość 100% kontenera */
+    max-width: 200px; /* Maksymalna szerokość przycisku */
+    margin: 0 auto; /* Centruj przycisk */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
