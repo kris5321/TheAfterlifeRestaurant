@@ -139,3 +139,17 @@ li{
         opacity: 0;
     }
 }
+
+
+/* Dla urządzeń o szerokości ekranu mniejszej niż 768px */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Zmień układ na kolumnowy */
+        height: auto; /* Ustaw wysokość na auto */
+    }
+
+    main .left, main .center, main .right {
+        width: 100%; /* Ustaw szerokość sekcji na 100% */
+        margin: 0; /* Usuń marginesy */
+    }
+}
