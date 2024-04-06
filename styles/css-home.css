@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* Globalne style */
 body {
     background-color: chocolate;
@@ -7,6 +8,10 @@ body {
 /* Usunięcie marginesów dla headera i footera */
 header, footer {
     margin: 0;
+=======
+body {
+    background-color:chocolate;
+>>>>>>> Stashed changes
 }
 
 /* Adjustments to main section */
@@ -14,10 +19,15 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< Updated upstream
     height: 780px;
     background-color: chocolate;
     width: 100%;
     margin: 0; /* Usunięcie marginesu */
+=======
+    height: 850px;
+    background-color:chocolate;
+>>>>>>> Stashed changes
 }
 
 /* Lewa sekcja */
@@ -26,6 +36,11 @@ main {
     text-align: center;
     margin-left: 5%;
     padding-right: 5%;
+}
+.center {
+        display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Środkowa sekcja */
@@ -43,8 +58,13 @@ main {
 
 /* Image styles */
 .center-image {
+<<<<<<< Updated upstream
     width: 100%; /* Ustawienie szerokości na 100% */
     height: auto; /* Zachowanie proporcji */
+=======
+    max-width: 100%;
+    height: 100%; /* Dodaj wysokość 100% */
+>>>>>>> Stashed changes
 }
 
 /* Right section styles */
@@ -154,6 +174,7 @@ li {
     }
 }
 
+<<<<<<< Updated upstream
 @media (max-width: 768px) {
     /* Zmiana układu na kolumnowy dla małych ekranów */
     main {
@@ -170,10 +191,31 @@ li {
         margin: 0;
     }
 
+=======
+
+@media (max-width: 768px) {
+    /* Zmiana układu na kolumnowy dla małych ekranów */
+    main {
+      flex-direction: column;
+    }
+    
+  
+    /* Dostosowanie szerokości sekcji */
+    main .left, main .center, main .right {
+      width: 100%;
+    }
+  
+    /* Usunięcie marginesów */
+    main .left, main .center, main .right {
+      margin: 0;
+    }
+  
+>>>>>>> Stashed changes
     /* Dostosowanie wysokości obrazka */
     .center-image {
         max-width: 80%;
     }
+<<<<<<< Updated upstream
 
     /* Dodatkowe dostosowania (opcjonalnie) */
     .right-section h1 {
@@ -189,3 +231,20 @@ li {
         padding-right: 5%;
     }
 }
+=======
+  
+    /* Dodatkowe dostosowania (opcjonalnie) */
+    .right h1 {
+      font-size: 24px;
+    }
+  
+    .button1 {
+      font-size: 24px;
+      width: 90%;
+    }
+  
+    .przesun-tekst-do-gory {
+      padding-right: 5%;
+    }
+  }
+>>>>>>> Stashed changes
