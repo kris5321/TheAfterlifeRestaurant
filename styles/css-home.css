@@ -124,6 +124,45 @@ li {
     opacity: 0;
 }
 
+
+
+.motywacja {
+    background-color: #e96e1b;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .motywacja div {
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .motywacja h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .motywacja p {
+    font-size: 16px;
+    font-family: '', serif;
+  }
+  
+
+
+
 @keyframes slideFromLeft {
     from {
         transform: translateX(-100%);

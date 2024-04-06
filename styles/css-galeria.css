@@ -87,6 +87,7 @@
     right: 15px;
 }
 
+
 /* Dostosowanie wielkości zdjęć dla mniejszych ekranów */
 @media (max-width: 768px) {
     .galeria img {
