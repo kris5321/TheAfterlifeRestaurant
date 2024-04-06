@@ -101,3 +101,39 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Stylowanie kontenerów przy zmniejszaniu okna przeglądarki */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column; /* Zmiana na układ kolumnowy przy małych ekranach */
+        align-items: center; /* Wyrównanie do środka */
+    }
+
+    .container-inputs,
+    .restaurant-info,
+    .container-map {
+        max-width: 100%; /* Maksymalna szerokość kontenerów przy małych ekranach */
+        margin: 20px auto; /* Automatyczny margines z góry i dołu */
+        padding: 10px; /* Dodatkowy padding dla wszystkich kontenerów */
+        box-sizing: border-box; /* Uwzględnienie paddingu w szerokości kontenera */
+    }
+
+    .container-map {
+        justify-content: center; /* Wyrównanie mapy do środka */
+    }
+
+    .restaurant-info {
+        padding: 20px; /* Mniejszy padding dla informacji o restauracji */
+    }
+
+    .input-group input,
+    .input-group textarea {
+        width: calc(100% - 20px); /* Dopasowanie szerokości inputów i textarea */
+        margin-bottom: 15px; /* Większy odstęp między inputami */
+    }
+
+    button {
+        width: calc(100% - 20px); /* Dopasowanie szerokości przycisku */
+    }
+}
+
+
