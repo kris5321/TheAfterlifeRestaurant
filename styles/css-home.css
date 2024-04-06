@@ -1,15 +1,12 @@
-/* Globalne style */
 body {
     background-color: chocolate;
-    margin: 0; /* Usunięcie marginesu */
+    margin: 0; 
 }
 
-/* Usunięcie marginesów dla headera i footera */
 header, footer {
     margin: 0;
 }
 
-/* Adjustments to main section */
 main {
     display: flex;
     justify-content: space-between;
@@ -17,10 +14,10 @@ main {
     height: 100%;
     background-color: chocolate;
     width: 100%;
-    margin: 0; /* Usunięcie marginesu */
+    margin: 0; 
 }
 
-/* Lewa sekcja */
+
 .left-section {
     width: 20%;
     text-align: center;
@@ -28,26 +25,24 @@ main {
     padding-right: 5%;
 }
 
-/* Środkowa sekcja */
 .center-section {
     width: 60%;
     text-align: center;
 }
 
-/* Prawa sekcja */
+
 .right-section {
     width: 20%;
     text-align: center;
     padding-left: 5%;
 }
 
-/* Image styles */
+
 .center-image {
-    width: 100%; /* Ustawienie szerokości na 100% */
-    height: auto; /* Zachowanie proporcji */
+    width: 100%; 
+    height: auto; 
 }
 
-/* Right section styles */
 main .right-section {
     width: 20%;
     text-align: center;
@@ -55,12 +50,10 @@ main .right-section {
     height: 100%;
 }
 
-/* Zasady Loteria na kod promocyjny */
 .right-section h1 {
     margin-bottom: 20px;
 }
 
-/* Button styles */
 .button1 {
     height: 50px;
     width: 80%;
@@ -71,19 +64,16 @@ main .right-section {
     font-size: 32px;
 }
 
-/* Przesunięcie tekstu w górę */
 .przesun-tekst-do-gory {
  
     padding-right: 12%;
     font-size: 24px;
 }
 
-/* Dodanie możliwości pisania po całej sekcji */
 .right-content {
     flex-grow: 1;
 }
 
-/* Dodatkowe style */
 .promocja {
     color: greenyellow;
     margin-bottom: 5%;
@@ -137,9 +127,9 @@ li {
     flex-wrap: wrap;
     justify-content: space-between;
     color: white;
-  }
+}
   
-  .motywacja div {
+.motywacja div {
     text-align: center;
     width: 20%;
     padding: 10px;
@@ -147,19 +137,60 @@ li {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  .motywacja h1 {
+.motywacja h1 {
     font-size: 18px;
     margin-bottom: 5px;
     font-family: 'Merriweather', serif;
-  }
+}
   
-  .motywacja p {
+.motywacja p {
     font-size: 16px;
     font-family: '', serif;
-  }
+}
   
+  
+/*  koło fortuny */
+.spin-animation {
+    animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+
+
+
+
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 
 
@@ -194,27 +225,22 @@ li {
 }
 
 @media (max-width: 768px) {
-    /* Zmiana układu na kolumnowy dla małych ekranów */
     main {
         flex-direction: column;
     }
 
-    /* Dostosowanie szerokości sekcji */
     main .left-section, main .center-section, main .right-section {
         width: 100%;
     }
 
-    /* Usunięcie marginesów */
     main .left-section, main .center-section, main .right-section {
         margin: 0;
     }
 
-    /* Dostosowanie wysokości obrazka */
     .center-image {
         max-width: 80%;
     }
 
-    /* Dodatkowe dostosowania (opcjonalnie) */
     .right-section h1 {
         font-size: 24px;
     }
