@@ -69,9 +69,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
     color: #fff;
-    /* position: fixed; Zmień pozycję na stałą, aby umieścić na dole ekranu */
+
     bottom: 0; /* Ustaw na dole ekranu */
     width: 100%; /* Rozciągnij na szerokość ekranu */
 }
