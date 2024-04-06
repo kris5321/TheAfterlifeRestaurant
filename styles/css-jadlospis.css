@@ -17,12 +17,13 @@
 .menu-container {
     display: flex;
     justify-content: space-between;
+    margin-left: 100px;
 }
 
-/* .przystawki,
+.przystawki,
 .dania-glowne {
     flex-basis: 45%;
-} */
+}
 
 
 .przystawki h2,
@@ -39,12 +40,12 @@
 
 
 .dania-container img {
-    max-width: 30%;
+    max-width: 50%;
     height: auto;
 }
 
 .przystawki-container img {
-    max-width: 25%;
+    max-width: 50%;
     height: auto;
 }
 
