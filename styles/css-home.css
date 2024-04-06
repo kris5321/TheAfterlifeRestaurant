@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 /* Globalne style */
 body {
@@ -12,6 +13,10 @@ header, footer {
 body {
     background-color:chocolate;
 >>>>>>> Stashed changes
+=======
+body {
+    background-color:chocolate;
+>>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
 }
 
 /* Adjustments to main section */
@@ -19,12 +24,15 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     height: 780px;
     background-color: chocolate;
     width: 100%;
     margin: 0; /* Usunięcie marginesu */
 =======
+=======
+>>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
     height: 850px;
     background-color:chocolate;
 >>>>>>> Stashed changes
@@ -39,6 +47,20 @@ main {
 }
 .center {
         display: flex;
+<<<<<<< HEAD
+=======
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center section styles */
+main .center {
+    height: 100%;
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+>>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
     justify-content: center;
     align-items: center;
 }
@@ -64,7 +86,10 @@ main {
 =======
     max-width: 100%;
     height: 100%; /* Dodaj wysokość 100% */
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
 }
 
 /* Right section styles */
@@ -174,6 +199,7 @@ li {
     }
 }
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 @media (max-width: 768px) {
     /* Zmiana układu na kolumnowy dla małych ekranów */
@@ -192,6 +218,8 @@ li {
     }
 
 =======
+=======
+>>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
 
 @media (max-width: 768px) {
     /* Zmiana układu na kolumnowy dla małych ekranów */
@@ -210,11 +238,15 @@ li {
       margin: 0;
     }
   
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
     /* Dostosowanie wysokości obrazka */
     .center-image {
         max-width: 80%;
     }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 
     /* Dodatkowe dostosowania (opcjonalnie) */
@@ -232,6 +264,8 @@ li {
     }
 }
 =======
+=======
+>>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
   
     /* Dodatkowe dostosowania (opcjonalnie) */
     .right h1 {
@@ -246,5 +280,9 @@ li {
     .przesun-tekst-do-gory {
       padding-right: 5%;
     }
+<<<<<<< HEAD
   }
 >>>>>>> Stashed changes
+=======
+  }
+>>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af

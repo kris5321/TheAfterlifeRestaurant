@@ -73,10 +73,9 @@ footer {
     align-items: center;
    
     color: #fff;
-    width: 100%;
-}
-main {
-    margin-bottom: 70px; /* Dostosuj wartość, jeśli chcesz większy lub mniejszy odstęp */
+    position: fixed; /* Zmień pozycję na stałą, aby umieścić na dole ekranu */
+    bottom: 0; /* Ustaw na dole ekranu */
+    width: 100%; /* Rozciągnij na szerokość ekranu */
 }
 
 
