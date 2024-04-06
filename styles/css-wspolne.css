@@ -65,31 +65,41 @@ nav a.active::after {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #29180A;
+    background-color: #29180a;
     color: #fff;
-    padding: 10px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Wyjustowanie elementów do góry */
 }
 
-.footer-left, .footer-right {
-    flex: 1;
-    text-align: center;
-    font-size: 32px
-}
-
+.footer-right,
 .footer-left {
     text-align: left;
-    padding-left: 15%;
+    width: 400px;
+    margin-top: 0; /* Usunięcie marginesu górnego */
+}
+  
+.adress-tittle {
+    margin-bottom: 5px;
+    color: aqua;
+    font-size: 36px;
+}
+  
+.footer-left span,
+.footer-right span {
+display: block;
 }
 
-.footer-right {
-    text-align: right;
-    padding-right: 15%;
+h5 {
+color: grey;
 }
 
-
+.informacje {
+font-family: 'Indie Flower', static;
+font-size: 24px;
+}
+  
 .logo.left {
     animation: slideFromLeft 1.5s ease forwards;
 }
@@ -136,6 +146,29 @@ footer {
     }
 }
 
+.social-media {
+    position: fixed; /* Ustawienie pozycji social-media na stałe */
+    top: 50%; /* Umieszczenie na środku wertykalnie */
+    transform: translateY(-50%); /* Wycentrowanie wertykalnie */
+    left: 20px; /* Odległość od lewej krawędzi */
+    z-index: 999; /* Wysoki index warstwy, aby być zawsze na wierzchu */
+    display: flex; /* Ustawienie na flexbox, aby można było stosować spację między elementami */
+    flex-direction: column; /* Układanie ikon w kolumnie */
+    align-items: center; /* Wycentrowanie poziome ikon */
+}
+
+.social-media a {
+    margin-bottom: 10px; /* Odstęp między ikonami */
+}
+
+/* Dodatkowy styl dla ikon */
+.social-media img {
+    width: 50px; /* Ustawienie szerokości */
+    height: auto; /* Zachowanie proporcji */
+}
+
+
+
 /* Responsywność dla mniejszych ekranów */
 @media (max-width: 768px) {
     header {
@@ -156,6 +189,16 @@ footer {
     nav li {
         margin-left: 0; /* Usuwamy marginesy na boki */
         margin-bottom: 10px; /* Dodajemy odstęp między elementami listy */
+    }
+
+    footer {
+        flex-direction: column; /* Zmiana układu na kolumnowy dla mniejszych ekranów */
+        text-align: center; /* Wyśrodkowanie tekstu */
+    }
+
+    .footer-left, .footer-right {
+        width: 100%; /* Zmiana szerokości na 100% dla elementów w kolumnie */
+        margin-bottom: 20px; /* Dodanie odstępu między elementami w kolumnie */
     }
 }
 
