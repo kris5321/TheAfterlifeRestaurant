@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 /* Globalne style */
 body {
     background-color: chocolate;
@@ -9,14 +7,6 @@ body {
 /* Usunięcie marginesów dla headera i footera */
 header, footer {
     margin: 0;
-=======
-body {
-    background-color:chocolate;
->>>>>>> Stashed changes
-=======
-body {
-    background-color:chocolate;
->>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
 }
 
 /* Adjustments to main section */
@@ -24,18 +14,10 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
     height: 780px;
     background-color: chocolate;
     width: 100%;
     margin: 0; /* Usunięcie marginesu */
-=======
-=======
->>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
-    height: 850px;
-    background-color:chocolate;
->>>>>>> Stashed changes
 }
 
 /* Lewa sekcja */
@@ -47,20 +29,6 @@ main {
 }
 .center {
         display: flex;
-<<<<<<< HEAD
-=======
-    justify-content: center;
-    align-items: center;
-}
-
-/* Center section styles */
-main .center {
-    height: 100%;
-    width: 70%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
->>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
     justify-content: center;
     align-items: center;
 }
@@ -80,16 +48,8 @@ main .center {
 
 /* Image styles */
 .center-image {
-<<<<<<< Updated upstream
     width: 100%; /* Ustawienie szerokości na 100% */
     height: auto; /* Zachowanie proporcji */
-=======
-    max-width: 100%;
-    height: 100%; /* Dodaj wysokość 100% */
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
 }
 
 /* Right section styles */
@@ -199,8 +159,6 @@ li {
     }
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 @media (max-width: 768px) {
     /* Zmiana układu na kolumnowy dla małych ekranów */
     main {
@@ -217,9 +175,177 @@ li {
         margin: 0;
     }
 
-=======
-=======
->>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
+    /* Dostosowanie wysokości obrazka */
+    .center-image {
+        max-width: 80%;
+    }
+
+    /* Dodatkowe dostosowania (opcjonalnie) */
+    .right-section h1 {
+        font-size: 24px;
+    }
+
+    .button1 {
+        font-size: 24px;
+        width: 90%;
+    }
+
+    .przesun-tekst-do-gory {
+        padding-right: 5%;
+    }
+}
+
+body {
+    background-color:chocolate;
+}
+
+/* Adjustments to main section */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 850px;
+    background-color:chocolate;
+}
+
+/* Left section styles */
+main .left {
+    width: 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+   
+}
+.center {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center section styles */
+main .center {
+    height: 100%;
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styles */
+.center-image {
+    max-width: 100%;
+    height: 100%; /* Dodaj wysokość 100% */
+}
+
+/* Right section styles */
+/* Right section styles */
+main .right {
+    width: 15%;
+    text-align: center; /* Wyśrodkowanie tekstu */
+    padding-right: 4%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Zasady Loteria na kod promocyjny */
+.right h1 {
+    margin-bottom: 20px; /* Dodatkowy margines na dole dla estetyki */
+}
+/* Button styles */
+.button1 {
+    height: 50px;
+    width: 80%;
+    margin-bottom: 5%; /* zmiana marginesu, aby przesunąć przycisk do góry */
+    background-color: darkred;
+    border-radius: 20px;
+    color: white;
+    font-size: 32px;
+}
+
+/* Przesunięcie tekstu w górę */
+.przesun-tekst-do-gory {
+    align-self: flex-start; /* przesunięcie do góry */
+    padding-right: 12%;
+    font-size: 24px;
+}
+
+/* Dodanie możliwości pisania po całej sekcji */
+.right-content {
+    flex-grow: 1; /* wykorzystanie dostępnej przestrzeni wewnątrz sekcji */
+}
+
+.promocja {
+    color: greenyellow;
+    margin-bottom: 5%; /* Dodaje margines na dole tekstu */
+    margin-top: 0; /* Usuwa margines górny */
+}
+.przesun{
+    margin-bottom: 55%;
+}
+.b1{
+    width: 100%;
+    height:  10%;
+}
+ol{
+    padding: 2%;
+    margin: 3px;
+}
+li{
+    padding: 4px;
+}
+.logo.left {
+    animation: slideFromLeft 1.5s ease forwards;
+}
+
+.logo.right {
+    animation: slideFromRight 1.5s ease forwards;
+}
+
+.logo3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInAndOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 @media (max-width: 768px) {
     /* Zmiana układu na kolumnowy dla małych ekranów */
@@ -238,34 +364,10 @@ li {
       margin: 0;
     }
   
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
     /* Dostosowanie wysokości obrazka */
     .center-image {
         max-width: 80%;
     }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-
-    /* Dodatkowe dostosowania (opcjonalnie) */
-    .right-section h1 {
-        font-size: 24px;
-    }
-
-    .button1 {
-        font-size: 24px;
-        width: 90%;
-    }
-
-    .przesun-tekst-do-gory {
-        padding-right: 5%;
-    }
-}
-=======
-=======
->>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
   
     /* Dodatkowe dostosowania (opcjonalnie) */
     .right h1 {
@@ -280,9 +382,4 @@ li {
     .przesun-tekst-do-gory {
       padding-right: 5%;
     }
-<<<<<<< HEAD
   }
->>>>>>> Stashed changes
-=======
-  }
->>>>>>> d9634e101b4b5faa8f1c66540348dbc1cb73c1af
