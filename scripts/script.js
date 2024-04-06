@@ -1,6 +1,6 @@
 function losujRabat() {
-    // Generowanie losowego rabatu od 0% do 10%
-    var rabat = Math.floor(Math.random() * 11);
+    // Generowanie losowego rabatu od 0% do 20%
+    var rabat = Math.floor(Math.random() * 21);
     // Generowanie losowego kodu
     var kod = Math.random().toString(36).substr(2, 8).toUpperCase();
     // Wyświetlenie alertu z rabatem i kodem

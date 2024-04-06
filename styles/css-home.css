@@ -58,6 +58,7 @@ main .right {
     width: 80%;
     margin-bottom: 5%; /* zmiana marginesu, aby przesunąć przycisk do góry */
     background-color: darkred;
+    border-radius: 20px;
     color: white;
     font-size: 32px;
 }
