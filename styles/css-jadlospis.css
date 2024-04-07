@@ -1,5 +1,6 @@
 .container {
     margin: auto;
+    width: 80%; /* szerokość kontenera */
 }
 
 .jadlo {
@@ -15,18 +16,18 @@
 }
 
 .menu-container {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
 }
 
 .przystawki,
 .dania-glowne,
 .desery,
 .napoje {
-    flex-basis: 45%;
+    margin: 10px;
 }
-
 
 .przystawki h2,
 .dania-glowne h2,
@@ -44,20 +45,20 @@
     align-items: center;
 }
 
-
+/* Zwiększone rozmiary obrazków */
 .dania-container img,
 .przystawki-container img,
 .deser-container img,
-.napoje-container img
-{
-    max-width: 50%;
-    height: auto;
+.napoje-container img {
+    width: 100%; /* Ustawienie szerokości na 100% */
+    max-width: 550px; /* Zwiększenie maksymalnej szerokości obrazka */
+    height: auto; /* Automatyczna wysokość zachowująca proporcje */
 }
 
 .opis {
     margin-top: 10px;
-    
 }
+
 .opis h3 {
     margin: left;
 }
@@ -68,4 +69,14 @@
 
 .opis p {
     margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* zmniejszenie szerokości kontenera na małych ekranach */
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
 }
