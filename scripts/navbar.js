@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { href: "galeria.html", text: "Galeria" },
         { href: "historia.html", text: "Historia" },
         { href: "kontakt.html", text: "Kontakt" },
-        { href: "zrodla.html", text: "Zrodlo" }
+        { href: "credits.html", text: "Credits" }
     ];
 
     // Tworzymy nawigację dynamiczną

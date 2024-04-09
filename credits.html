@@ -3,11 +3,38 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TheAfterlifeRestaurant</title>
-
     <link rel="stylesheet" type="text/css" href="./styles/css-wspolne.css">
-    <link rel="stylesheet" type="text/css" href="./styles/css-zrodlo.css">
+    <link rel="stylesheet" type="text/css" href="./styles/zrodlo.css">
     <link rel="stylesheet" type="text/css" href="./styles/css-home.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="./scripts/wylosujCos.js"></script>
+
+    <style>
+        .zrodlo {
+            font-size: 16px;
+            text-align: center; /* Wyrównaj tekst do środka */
+            display: flex; /* Ustaw flexbox */
+            flex-direction: column; /* Ustaw kierunek flexbox na kolumnę */
+            justify-content: center; /* Wyrównaj zawartość do środka wzdłuż osi pionowej */
+            align-items: center; /* Wyrównaj zawartość do środka wzdłuż osi poziomej */
+        }
+
+        .zrodlo p:nth-child(3) {
+            font-weight: bold; /* Pogrubienie tekstu */
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -25,7 +52,7 @@
     <p>z którego pochodzą zawarte w naszym materiale fotografie oraz tekst.</p>
     <p> Zdjęcia zostały pozyskane z <span style="font-weight: bold;">Freepik.pl</span>,</p>
     <p>natomiast treść tekstu została napisana przez nas. Jest to dla nas istotne,</p>
-    <p>aby zagwarantować transparentność oraz szacunek dla praw autorskich."</p>
+    <p>aby zagwarantować transparentność oraz szacunek dla praw autorskich12."</p>
 </main>
 
 <div class="social-media">
@@ -33,11 +60,6 @@
     <a href="https://www.youtube.com/watch?v=BEo-XBIc0qA" target="_blank"><img width="100" height="100" src="https://img.icons8.com/matisse/100/youtube.png" alt="youtube"/></a><br>
     <a href="https://www.instagram.com" target="_blank"><img width="100" height="100" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a>
 </div>
-
-<!-- <div class="image-thank-u">
-    <img src="pictures/job198-ohm-38-a.jpg" width="1200px" height="750px">
-</div> -->
-
 
 <footer>
     <div class="footer-left">
@@ -67,7 +89,7 @@
     </div>
 </footer>
 
-<script src="./scripts/zrodla.js"></script>
+<script src="./scripts/script.js"></script>
 <script src="./scripts/navbar.js"></script>
 </body>
 </html>

@@ -156,7 +156,6 @@ li {
     animation: spin 2s linear infinite;
 }
 
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -167,11 +166,6 @@ li {
 }
 
 
-
-
-
-
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -180,8 +174,6 @@ li {
         transform: rotate(720deg);
     }
 }
-
-
 
 @keyframes spin {
     from {
@@ -191,7 +183,6 @@ li {
         transform: rotate(360deg);
     }
 }
-
 
 
 @keyframes slideFromLeft {
