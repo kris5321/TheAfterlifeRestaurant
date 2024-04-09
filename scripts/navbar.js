@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
         { href: "menu.html", text: "Jadłospis" },
         { href: "galeria.html", text: "Galeria" },
         { href: "historia.html", text: "Historia" },
-        { href: "kontakt.html", text: "Kontakt" }
+        { href: "kontakt.html", text: "Kontakt" },
+        { href: "zrodla.html", text: "Zrodlo" }
     ];
 
     // Tworzymy nawigację dynamiczną
