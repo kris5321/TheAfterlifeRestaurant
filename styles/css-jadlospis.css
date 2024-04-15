@@ -73,10 +73,17 @@
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 90%; /* zmniejszenie szerokości kontenera na małych ekranach */
+        width: 30%; /* zmniejszenie szerokości kontenera na małych ekranach */
     }
 
     .menu-container {
         grid-template-columns: 1fr;
+    }
+
+    .przystawki,
+    .dania-glowne,
+    .desery,
+    .napoje {
+        margin: 20px;
     }
 }

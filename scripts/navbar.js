@@ -4,12 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Definiujemy nawigację
     const navLinks = [
-        { href: "main.html", text: "Home" },
+        { href: "index.html", text: "Home" },
         { href: "menu.html", text: "Jadłospis" },
         { href: "galeria.html", text: "Galeria" },
         { href: "historia.html", text: "Historia" },
-        { href: "kontakt.html", text: "Kontakt" },
-        { href: "credits.html", text: "Credits" }
+        { href: "kontakt.html", text: "Kontakt" }
     ];
 
     // Tworzymy nawigację dynamiczną
