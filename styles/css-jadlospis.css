@@ -1,6 +1,6 @@
 .container {
     margin: auto;
-    width: 80%; /* szerokość kontenera */
+    width: 80%; 
 }
 
 .jadlo {
@@ -45,14 +45,13 @@
     align-items: center;
 }
 
-/* Zwiększone rozmiary obrazków */
 .dania-container img,
 .przystawki-container img,
 .deser-container img,
 .napoje-container img {
-    width: 100%; /* Ustawienie szerokości na 100% */
-    max-width: 550px; /* Zwiększenie maksymalnej szerokości obrazka */
-    height: auto; /* Automatyczna wysokość zachowująca proporcje */
+    width: 100%; 
+    max-width: 550px; 
+    height: auto;
 }
 
 .opis {
@@ -73,7 +72,7 @@
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 30%; /* zmniejszenie szerokości kontenera na małych ekranach */
+        width: 30%; 
     }
 
     .menu-container {

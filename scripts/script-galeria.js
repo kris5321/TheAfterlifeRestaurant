@@ -5,7 +5,6 @@ const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
 let currentImgIndex = 0;
 
-// Funkcja do ustawiania zdjęcia na podstawie indeksu
 function showImage(index) {
     const allImages = document.querySelectorAll('.galeria img');
     const imgSrc = allImages[index].getAttribute('src');
@@ -13,7 +12,6 @@ function showImage(index) {
     currentImgIndex = index;
 }
 
-// Pokaż pierwsze zdjęcie po kliknięciu na miniaturę
 galeria.addEventListener('click', (e) => {
     if (e.target.tagName === 'IMG') {
         const imgIndex = Array.from(e.target.parentElement.children).indexOf(e.target);
@@ -22,7 +20,6 @@ galeria.addEventListener('click', (e) => {
     }
 });
 
-// Nawigacja za pomocą strzałek
 prevBtn.addEventListener('click', () => {
     currentImgIndex = (currentImgIndex - 1 + galeria.children.length) % galeria.children.length;
     showImage(currentImgIndex);
@@ -40,7 +37,7 @@ closeBtn.addEventListener('click', () => {
 });
 
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') { // Sprawdzamy czy naciśnięty klawisz to klawisz ESC
-        overlay.style.display = 'none'; // Ukrywamy overlay ze zdjęciem
+    if (e.key === 'Escape') { 
+        overlay.style.display = 'none';
     }
 });

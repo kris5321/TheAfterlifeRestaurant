@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Pobieramy aktualną ścieżkę URL
     const currentPath = window.location.pathname;
-
-    // Definiujemy nawigację
     const navLinks = [
         { href: "index.html", text: "Home" },
         { href: "menu.html", text: "Jadłospis" },
@@ -11,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
         { href: "kontakt.html", text: "Kontakt" }
     ];
 
-    // Tworzymy nawigację dynamiczną
     const navContainer = document.getElementById('dynamic-nav');
     const ul = document.createElement('ul');
 
@@ -23,12 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
         li.appendChild(a);
         ul.appendChild(li);
 
-        // Sprawdzamy, czy ścieżka URL zawiera href linku
         if (currentPath.includes(link.href)) {
             a.classList.add('active');
         }
     });
 
-    // Dodajemy nawigację do kontenera
     navContainer.appendChild(ul);
 });
