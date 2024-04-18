@@ -1,5 +1,5 @@
-# TheAfterlifeRestaurant
-# Projekt strony internetowej
-## Twórcy
-> Karol Nowak numer albumu 36782
-> Krystian Wiatr numer albumu 36415
+# TheAfterlifeRestaurant 💻🍽️
+## Projekt strony internetowej 🌐
+### Twórcy
+> Karol Nowak&nbsp;numer albumu 36782  
+> Krystian Wiatr&nbsp;numer albumu 36415
