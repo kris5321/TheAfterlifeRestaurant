@@ -62,6 +62,12 @@ main .right-section {
     border-radius: 20px;
     color: white;
     font-size: 32px;
+    transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+    background-color: darkorange;
+    cursor: pointer;
 }
 
 .przesun-tekst-do-gory {
@@ -136,7 +142,13 @@ li {
     margin: 5px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    transition: transform 0.3s ease;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.motywacja div:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
   
 .motywacja h1 {
