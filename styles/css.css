@@ -134,3 +134,8 @@ footer {
 	color: #fff;
 }
 
+#dynamic-nav .active {
+    color: red;
+}
+
+

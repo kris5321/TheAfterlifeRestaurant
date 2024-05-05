@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (currentPath.includes(link.href)) {
             a.classList.add('active');
+            a.style.color = 'red';
+            a.style.textDecorationColor = 'red';
         }
     });
 

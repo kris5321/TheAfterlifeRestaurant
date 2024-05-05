@@ -1,6 +1,7 @@
 .container {
     margin: auto;
-    width: 80%; 
+    width: 99%;
+    
 }
 
 .jadlo {
@@ -18,7 +19,7 @@
 .menu-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
-    grid-gap: 10px;
+    grid-gap: 20px;
     justify-content: center;
 }
 
@@ -32,7 +33,7 @@
 .przystawki h2,
 .dania-glowne h2,
 .desery h2,
-.napoje h2  {
+.napoje h2 {
     text-align: center;
 }
 
@@ -45,21 +46,32 @@
     align-items: center;
 }
 
-.dania-container img,
 .przystawki-container img,
+.dania-container img,
 .deser-container img,
 .napoje-container img {
-    width: 100%; 
-    max-width: 550px; 
-    height: auto;
+    width: 600px; 
+    height: 300px; 
+    object-fit: cover; 
+    object-position: center; 
+    margin-bottom: 10px;
 }
+.przystawki-container h3,
+.dania-container h3,
+.deser-container h3,
+.napoje-container h3,
+.przystawki-container p,
+.dania-container p,
+.deser-container p,
+.napoje-container p {
+    text-align: center; 
+}
+
 
 .opis {
+    text-align: center;
     margin-top: 10px;
-}
-
-.opis h3 {
-    margin: left;
+    width: 450px; 
 }
 
 .opis h3 {
@@ -72,7 +84,7 @@
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 30%; 
+        width: 90%;
     }
 
     .menu-container {
