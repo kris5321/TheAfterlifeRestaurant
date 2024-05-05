@@ -35,6 +35,7 @@ nav {
     transform: translate(-50%, -50%);
 }
 
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -51,6 +52,10 @@ nav a {
     color: #fff;
     text-decoration: none;
     position: relative;
+}
+nav a:hover {
+    background-color: #444;
+    padding: 10px;
 }
 
 nav a.active::after {
@@ -76,14 +81,14 @@ footer {
 .footer-right,
 .footer-left {
     text-align: left;
-    width: 400px;
+    width: 300px;
     margin-top: 0; 
 }
   
 .adress-tittle {
     margin-bottom: 5px;
     color: aqua;
-    font-size: 36px;
+    font-size: 20px;
 }
   
 .footer-left span,
@@ -94,18 +99,28 @@ footer {
 .freepik {
     background-color: #29180a;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
-    padding: 20px;
+    padding: 0px;
 }
 
 h5 {
     color: grey;
+    font-size: 10px;
+}
+ 
+
+.informacje a {
+    color: #999;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-.informacje {
-    font-family: 'Indie Flower', static;
-    font-size: 24px;
+
+.informacje a:hover {
+    color: #555; 
+    transform: scale(1.1);
 }
   
 .logo.left {
@@ -123,6 +138,68 @@ h5 {
     transform: translate(-50%, -50%);
     opacity: 0;
 }
+
+.nazwa-restauracji {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: oscylacja 2s infinite alternate, zmiana-koloru 5s infinite;
+}
+
+@keyframes oscylacja {
+    0% {
+        transform: translate(-50%, -50%) translateY(-20px);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(20px); 
+    }
+}
+
+@keyframes zmiana-koloru {
+    0% {
+        color: red;
+    }
+    10% {
+        color: orange;
+    }
+    20% {
+        color: yellow;
+    }
+    30% {
+        color: green; 
+    }
+    40% {
+        color: blue; 
+    }
+    50% {
+        color: indigo; 
+    }
+    60% {
+        color: violet; 
+    }
+    70% {
+        color: pink;
+    }
+    80% {
+        color: cyan; 
+    }
+    90% {
+        color: magenta; 
+    }
+    100% {
+        color: purple; 
+    }
+}
+
+@media (max-width: 768px) {
+    .nazwa-restauracji {
+        font-size: 24px;
+    }
+}
+
 
 @keyframes slideFromLeft {
     from {
