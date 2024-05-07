@@ -168,6 +168,10 @@ li {
     animation: spin 2s linear infinite;
 }
 
+.nazwa-restauracji {
+    font-family: "Audiowide", sans-serif;
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);

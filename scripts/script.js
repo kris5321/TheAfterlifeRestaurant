@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
             {value: 0, duration: 1500, easing: 'easeInOutQuad', delay: 2000}
         ],
         complete: function(anim) {
-            // Po zakończeniu animacji usuń logo
             document.querySelector('.logo3').remove();
         }
     });
